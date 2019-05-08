@@ -1,0 +1,3 @@
+[submodule "cam-cluster-dashboard"]
+	path = cam-cluster-dashboard
+	url = https://github.com/cam-cluster/cam-cluster-dashboard.git
