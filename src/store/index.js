@@ -1,10 +1,12 @@
 import debugFactory from 'debug';
 import cameras from './cameras';
+import cluster from './cluster';
 
 const debug = debugFactory( 'cam-cluster:store' );
 
 const _models = {
 	cameras,
+	cluster,
 };
 
 function reducer( models, state, modelName, actionName, data ) {
@@ -60,6 +62,7 @@ function createStore( models = _models ) {
 
 	function dispatch( modelName, actionName, data ) {
 		state = reducer( models, state, modelName, actionName, data );
+		return state;
 	}
 
 	return {
