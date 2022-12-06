@@ -28,9 +28,9 @@
   },
   "homepage": "https://github.com/cam-cluster/cam-cluster-server#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.1",
     "debug": "^4.1.1",
-    "express": "^4.16.4",
+    "express": "^4.18.2",
     "express-http-proxy": "^1.5.1"
   },
   "devDependencies": {
